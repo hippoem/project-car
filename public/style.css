@@ -345,14 +345,6 @@ h1,h2,h3,h4,h5,h6 {
 
 
 
-
-
-
-
-
-
-
-
 #content {
 	float: left;
 	width: 100%;
@@ -362,6 +354,17 @@ h1,h2,h3,h4,h5,h6 {
 	padding-left: 0px;
 	margin: 0px;
 }
+
+#auth-content {
+    float: left;
+    width: 100%;
+    padding-top: 50px;
+    padding-right: 0px;
+    padding-bottom: 350px;
+    padding-left: 0px;
+    margin: 0px;
+}
+
 
 .mainslide {
 	padding: 0px;
@@ -761,11 +764,11 @@ div.register {
 	background-color: rgba(29, 124, 255, 0.82);
 	opacity: 0;
 	visibility: hidden;
-	
+
 	transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 	-moz-transition: all 0.5s;
-	
+
 }
 .mnbbon h3 {
 	font-family: promptmedium;
@@ -1248,7 +1251,7 @@ div.register {
 	padding-left: 15px;
 	border-radius: 0;
 	-webkit-appearance: none;
-	
+
 	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDEwMCAxMDAiIGlkPSJMYXllcl8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48cG9seWdvbiBmaWxsPSIjMDEwMTAxIiBwb2ludHM9IjIzLjEsMzQuMSA1MS41LDYxLjcgODAsMzQuMSA4MS41LDM1IDUxLjUsNjQuMSAyMS41LDM1IDIzLjEsMzQuMSAiLz48L3N2Zz4=) right 5px center no-repeat transparent;
 	background-size:  25px;
 }
@@ -1387,7 +1390,7 @@ input[type=range]:focus::-ms-fill-upper {
 	height: 100%;
 	width: 100%;
 		object-fit: cover;
-	
+
 }
 .fcbtag {
 	font-family: promptmedium;
@@ -1627,7 +1630,7 @@ input[type=range]:focus::-ms-fill-upper {
 div.rentsgqtextwrap.tab-contentwrap {
 	float: left;
 		background-color: #fff;
-	
+
 }
 
 .rentsgqtext {
@@ -2674,7 +2677,7 @@ box-shadow: 0 0 10px #c6c6c6;
 	float: left;
 	width: 783px;
 		border-left: 1px solid #e0e0e0;
-	
+
 }
 .puserprofile {
 	margin: 0px;
@@ -2784,7 +2787,7 @@ box-shadow: 0 0 10px #c6c6c6;
 .pusermenu.active img{
 	filter: invert(100%);
 		opacity: 1;
-	
+
 }
 
 
@@ -2808,7 +2811,7 @@ box-shadow: 0 0 10px #c6c6c6;
 	width: 44px;
 	margin: -3px 25px 0px 30px;
 		opacity: 0.8;
-	
+
 }
 .puserboxh h2 {
 	font-size: 32px;
@@ -3515,7 +3518,7 @@ box-shadow: 0 0 10px #c6c6c6;
 	border: 1px solid #1d7dff;
 	text-align: center;
 		font-family: promptregular;
-	
+
 }
 .identity {
 	margin: 0px;
@@ -3944,5 +3947,5 @@ div.message.tab-content {
 	display: none;
 }
 div.message.tab-content.active{
-	display: block; 
+	display: block;
 }
