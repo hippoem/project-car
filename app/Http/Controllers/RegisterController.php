@@ -33,6 +33,7 @@ class RegisterController extends Controller
 
         // Create and save the user.
         //$password = Hash::make('yourpassword');
+        //bcrypt
 
         $user = User::create(request(['firstname', 'lastname', 'email', 'password','telephone']));
 

@@ -7,14 +7,26 @@
     <div class="regcon">
     	<h1 class="reghead">ยินดีต้อนรับเข้าสู่ระบบ</h1>
         <h3 class="regsubh">Hippo Car Rent</h3>
-        <p class="regcate">Enter email address</p>
-        <input name="" type="text" class="regform"/>
-        <p class="regcate">Enter Password</p>
-        <input name="" type="text" class="regform"/>
-        <div class="regcheck">
-            <p>Forget Password ?</p>
+
+        <form method="POST" action="/login">
+
+  		{{ csrf_field() }}
+
+        <div class="form-group">
+                <label class="regcate" for="email">อีเมล</label>
+                <input type="email" class="form-control regform" id="email" name="email" />
         </div>
-        <input name="" type="button" value="เข้าสู่ระบบ" class="regregist"/>
+
+        <div class="form-group">
+                <label class="regcate" for="password">รหัสผ่าน</label>
+                <input type="password" class="form-control regform" id="password" name="password" />
+        </div>
+
+        <div class="regcheck">
+            <p>ลืมรหัสผ่าน ?</p>
+        </div>
+
+        <input name="submit" type="submit" value="เข้าสู่ระบบ" class="regregist"/>
     </div>
 
     <div class="clear"></div>
