@@ -40,7 +40,7 @@
         <li>คำขอเช่ารถ</li>
         <li>การเช่าของคุณ</li>
         <li>รถของคุณ</li>
-        <li><a href="{{ route('logout') }}">ออกจากระบบ</a></li>
+        <li><a href="/logout">ออกจากระบบ</a></li>
       </ul>
 
       @endif

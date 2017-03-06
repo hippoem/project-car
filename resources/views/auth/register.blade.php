@@ -38,14 +38,20 @@
 
 				<div class="form-group">
 						<label class="regcate" for="telephone">เบอร์โทรศัพท์</label>
-						<input type="password" class="form-control regform" id="telephone" name="telephone" />
+						<input type="text" class="form-control regform" id="telephone" name="telephone" />
 				</div>
 
 				<div class="regcheck">
 					<input name="" type="checkbox" value="" />
 					<p>ข้าพเจ้ายอมรับเงื่อนไขของ Hippo Car Rent</p>
 				</div>
-				<input name="" type="button" value="สมัครสมาชิก" class="regregist"/>
+
+				<!-- <div class="form-group">
+
+						<button type="submit" class="btn regregist">สมัครสมาชิก</button>
+
+				</div> -->
+				<input name="submit" type="submit" value="สมัครสมาชิก" class="regregist"/>
 			</form>
 		</div>
 		<img alt="" src="images/01-register_27.jpg" class="regfacebook" />
