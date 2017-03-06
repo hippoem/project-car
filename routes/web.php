@@ -15,3 +15,5 @@ Route::get('/login', 'LoginController@index');
 Route::post('/login', 'LoginController@store');
 
 Route::get('/logout', 'LoginController@destroy');
+
+Route::get('/search', 'AnnouncesController@index');
