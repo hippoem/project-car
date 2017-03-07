@@ -26,6 +26,14 @@ class AnnouncesController extends Controller
       Announces::create(request(['brand', 'gene', 'price']));
 
       return redirect('/search');
+
+    }
+
+    public function show($id)
+    {
+
+      return view('/announces.show');
+
     }
 
 

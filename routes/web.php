@@ -20,4 +20,6 @@ Route::get('/search', 'AnnouncesController@index');
 
 Route::get('/create', 'AnnouncesController@create');
 
+Route::get('/cars/{id}', 'AnnouncesController@show');
+
 Route::post('/create', 'AnnouncesController@store');
