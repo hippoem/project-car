@@ -118,8 +118,8 @@
                     <img alt="" src="/images/03-car-rent-single_18.png" />
                 </div>
                 <div class="rentsginfo">
-                    <h3>เช่ารถ โตโยต้า Alphard</h3>
-                    <p>฿750<span>/วัน</span></p>
+                    <h3>เช่ารถ {{ $announce->brand }} {{ $announce->gene }}</h3>
+                    <p>฿{{ number_format($announce->price) }}<span>/วัน</span></p>
                 </div>
             </div>
             <div class="rentsgwhite">

@@ -6,10 +6,18 @@ use App\Announces;
 
 class AnnouncesController extends Controller
 {
+
+    public function __construct()
+    {
+
+        $this->middleware('auth')->except(['show', 'index']);
+
+    }
+
     public function index()
     {
 
-        $announces = Announces::all();
+        $announces = Announces::orderBy('price', 'asc')->get();
 
         return view('announces.index', compact('announces'));
 
@@ -23,16 +31,26 @@ class AnnouncesController extends Controller
     public function store()
     {
 
-      Announces::create(request(['brand', 'gene', 'price']));
+      Announces::create([
+
+          'brand' => request('brand'),
+
+          'gene' => request('gene'),
+
+          'price' => request('price'),
+
+          'user_id' => auth()->id()
+
+      ]);
 
       return redirect('/search');
 
     }
 
-    public function show($id)
+    public function show(Announces $announce)
     {
 
-      return view('/announces.show');
+      return view('/announces.show', compact('announce'));
 
     }
 
