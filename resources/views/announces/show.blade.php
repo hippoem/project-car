@@ -127,18 +127,7 @@
                     <h3>รายละเอียดเกี่ยวกับรถ</h3>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.<br /><br />Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis</p>
                 </div>
-                <div class="rentsgpart">
-                    <h3>฿{{ number_format($announce->price) }} x 5 วัน</h3>
-                    <p>฿ 3,750</p>
-                </div>
-                <div class="rentsgpart">
-                    <h3>ประกันรถยนต์</h3>
-                    <p>฿ 500</p>
-                </div>
-                <div class="rentsgpart">
-                    <h3>ค่าธรรมเนียม</h3>
-                    <p>฿ 250</p>
-                </div>
+
                 <h3 class="mslrentcate">ช่วงเวลาที่คุณต้องการใช้รถ</h3>
 
 
@@ -155,6 +144,25 @@
                         <p>Return</p>
                     </div>
                 </div>
+
+                <div class="rentsgpart">
+                    <h3>฿{{ number_format($announce->price) }} x 5 วัน</h3>
+                    <p>฿ 3,750</p>
+                </div>
+                <div class="rentsgpart">
+                    <h3>ประกันรถยนต์</h3>
+                    <p>฿ 500</p>
+                </div>
+                <div class="rentsgpart">
+                    <h3>ค่าธรรมเนียม</h3>
+                    <p>฿ 250</p>
+                </div>
+
+                <div class="rentsgpart">
+                    <strong><h3>รวมทั้งหมด</h3></strong>
+                    <strong><p>฿ 2,550</p></strong>
+                </div>
+
 
 
 
