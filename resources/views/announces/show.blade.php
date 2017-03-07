@@ -27,7 +27,7 @@
             <div class="rentsgby">
                 <img alt="" src="/images/03-car-rent-single_45.png" />
                 <div class="rentsgbdet">
-                    <h3>{{ $announce->user->firstname }}</h3>
+                    <h3>{{ $announce->user->firstname }} {{ $announce->user->lastname }}</h3>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
                 </div>
             </div>
@@ -118,7 +118,7 @@
                     <img alt="" src="/images/03-car-rent-single_18.png" />
                 </div>
                 <div class="rentsginfo">
-                    <h3>เช่ารถ {{ $announce->brand }} {{ $announce->gene }}</h3>
+                    <h3>เช่ารถ {{ $announce->brands->name }} {{ $announce->gene }}</h3>
                     <p>฿{{ number_format($announce->price) }}<span>/วัน</span></p>
                 </div>
             </div>

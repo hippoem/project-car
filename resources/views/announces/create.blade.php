@@ -35,8 +35,17 @@
 
 
               <div class="form-group">
-                  <label class="regcate" for="brand">ยี่ห้อรถยนต์</label>
-                  <input type="text" class="form-control idtform" id="brand" name="brand" />
+                  <label class="regcate" for="brand_id">ยี่ห้อรถยนต์</label>
+                  <select id="brand_id" name="brand_id">
+
+                    @foreach ($brands as $brand)
+
+                      <option value="{{ $brand->id }}"> {{ $brand->name }} </option>
+
+                    @endforeach
+
+                  </select>
+                  <!-- <input type="text" class="form-control idtform" id="brand" name="brand" /> -->
               </div>
 
               <div class="form-group">

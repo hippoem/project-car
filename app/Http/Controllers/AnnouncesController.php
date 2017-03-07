@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Announces;
 use App\User;
+use App\Brands;
 
 class AnnouncesController extends Controller
 {
@@ -26,7 +27,10 @@ class AnnouncesController extends Controller
 
     public function create()
     {
-      return view ('/announces.create');
+
+      $brands = Brands::orderBy('name', 'asc')->get();
+
+      return view ('/announces.create', compact('brands'));
     }
 
     public function store()
@@ -34,7 +38,7 @@ class AnnouncesController extends Controller
 
       Announces::create([
 
-          'brand' => request('brand'),
+          'brand_id' => request('brand_id'),
 
           'gene' => request('gene'),
 
