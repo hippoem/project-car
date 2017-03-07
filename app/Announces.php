@@ -10,4 +10,11 @@ class Announces extends Model
         'brand', 'gene', 'price', 'pic', 'profile', 'user_id'
     ];
 
+    public function user()
+    {
+
+        return $this->belongsTo(User::class);
+
+    }
+
 }

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Announces;
+use App\User;
 
 class AnnouncesController extends Controller
 {
@@ -53,6 +54,7 @@ class AnnouncesController extends Controller
       return view('/announces.show', compact('announce'));
 
     }
+
 
 
 }
