@@ -30,3 +30,7 @@ Route::post('/create', 'AnnouncesController@store');
 Route::get('/admin/brands/create', 'BrandsController@create');
 
 Route::post('/admin/brands/create', 'BrandsController@store');
+
+Route::get('/admin/categories', 'CategoriesController@index');
+
+Route::post('/admin/categories', 'CategoriesController@store');
