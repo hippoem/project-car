@@ -25,36 +25,29 @@
 
   <div class="findcart_b">
   <div class="wrap">
-    <form>
+    <form method="post" action="/create">
+      {{ csrf_field() }}
         <div class="rentcon">
         	<h1 class="idthead">ลงประกาศ</h1>
             <p class="idtsubh">กรุณากรอกข้อมูลรถยนต์</p>
-        	<div class="idtinside">
+        	   <div class="idtinside">
             	<h2 class="idtcategory">ข้อมูลรถเช่าของคุณ</h2>
-                <input name="" type="text" placeholder="ชื่อ" class="idtform">
-                <input name="" type="text" placeholder="นามสกุล" class="idtform">
-                <div class="idtform a">
-                	รูปผู้เช่า    <input name="" type="file" placeholder="" class="">
-                </div>
-                <input name="" type="text" placeholder="วันเกิด" class="idtform b">
-                <input name="" type="text" placeholder="อีเมล" class="idtform">
-                <input name="" type="text" placeholder="เบอร์โทรศัพท์" class="idtform">
-                <input name="" type="text" placeholder="ที่อยู่ปัจจุบัน" class="idtform c">
-                <input name="" type="text" placeholder="จังหวัด" class="idtform">
-                <input name="" type="text" placeholder="รหัสไปรษณีย์" class="idtform">
-            	<h2 class="idtcategory">ข้อมูลการขับขี่</h2>
-                <input name="" type="text" placeholder="เลขใบขับขี่" class="idtform">
-                <input name="" type="text" placeholder="วันหมดอายุ" class="idtform b">
-                <textarea name="" cols="" rows="" class="idtform d">แนะนำตัวเองเพิ่มเติม</textarea>
-            	<h2 class="idtcategory">ข้อมูลการจ่ายเงิน</h2>
-                <input name="" type="text" placeholder="หมายเลขบัตรเครดิต" class="idtform">
-                <img alt="" class="idtbank" src="images/10-send-identity_32.jpg">
-                <p class="idtdate">วันหมดอายุ</p>
-                <select name="" class="idtdatelist"><option>เดือน</option></select>
-                <select name="" class="idtdatelist"><option>ปี</option></select>
-                <input name="" type="text" placeholder="CVV*" class="idtform">
-                <input name="" type="text" placeholder="ชื่อ" class="idtform">
-                <input name="" type="text" placeholder="นามสกุล" class="idtform">
+
+
+              <div class="form-group">
+                  <label class="regcate" for="brand">ยี่ห้อรถยนต์</label>
+                  <input type="text" class="form-control idtform" id="brand" name="brand" />
+              </div>
+
+              <div class="form-group">
+                  <label class="regcate" for="gene">รุ่นรถยนต์</label>
+                  <input type="text" class="form-control idtform" id="gene" name="gene" />
+              </div>
+
+              <div class="form-group">
+                  <label class="regcate" for="price">ราคา</label>
+                  <input type="text" class="form-control idtform" id="price" name="price" />
+              </div>
 
             </div>
             <div class="rentpage">

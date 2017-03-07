@@ -15,7 +15,11 @@ class CreateAnnouncesTable extends Migration
     {
         Schema::create('announces', function (Blueprint $table) {
             $table->increments('id');
-            
+            $table->string('brand');
+            $table->string('gene');
+            $table->decimal('price',6,2);
+            $table->string('pic')->default('/images/cars/BMMS1000RR.jpg');
+            $table->string('profile')->default('/images/profiles/profile.png');
             $table->timestamps();
         });
     }

@@ -84,6 +84,13 @@
             </div>
         </div>
         <div class="fcbcon">
+
+            @foreach ($announces as $announce)
+
+                @include ('announces.announce')
+
+            @endforeach
+
           <div class="fcbbox">
               <img alt="" src="images/02-find-car-rent_43.jpg" class="fcbcar" />
                 <p class="fcbtag">NEW</p>
@@ -119,126 +126,6 @@
                     <p class="fcbprice">฿750<span>/วัน</span></p>
                 </div>
             </div>
-          <div class="fcbbox">
-              <img alt="" src="images/02-find-car-rent_43.jpg" class="fcbcar" />
-                <img alt="" src="images/02-find-car-rent_51.png" class="fcbown" />
-                <div class="fcbdetail">
-                  <div class="fcbleft">
-                      <h3>เช่ารถ Toyota Alphard</h3>
-                        <div class="fcbrate">
-                          <img alt="" src="images/03-car-rent-single_15.png" />
-                          <img alt="" src="images/03-car-rent-single_15.png" />
-                          <img alt="" src="images/03-car-rent-single_15.png" />
-                          <img alt="" src="images/03-car-rent-single_18.png" />
-                          <img alt="" src="images/03-car-rent-single_18.png" />
-                        </div>
-                    </div>
-                    <p class="fcbprice">฿750<span>/วัน</span></p>
-                </div>
-            </div>
-          <div class="fcbbox">
-              <img alt="" src="images/02-find-car-rent_43.jpg" class="fcbcar" />
-                <img alt="" src="images/02-find-car-rent_51.png" class="fcbown" />
-                <div class="fcbdetail">
-                  <div class="fcbleft">
-                      <h3>เช่ารถ Toyota Alphard</h3>
-                        <div class="fcbrate">
-                          <img alt="" src="images/03-car-rent-single_15.png" />
-                          <img alt="" src="images/03-car-rent-single_15.png" />
-                          <img alt="" src="images/03-car-rent-single_15.png" />
-                          <img alt="" src="images/03-car-rent-single_18.png" />
-                          <img alt="" src="images/03-car-rent-single_18.png" />
-                        </div>
-                    </div>
-                    <p class="fcbprice">฿750<span>/วัน</span></p>
-                </div>
-            </div>
-          <div class="fcbbox">
-              <img alt="" src="images/02-find-car-rent_43.jpg" class="fcbcar" />
-                <img alt="" src="images/02-find-car-rent_51.png" class="fcbown" />
-                <div class="fcbdetail">
-                  <div class="fcbleft">
-                      <h3>เช่ารถ Toyota Alphard</h3>
-                        <div class="fcbrate">
-                          <img alt="" src="images/03-car-rent-single_15.png" />
-                          <img alt="" src="images/03-car-rent-single_15.png" />
-                          <img alt="" src="images/03-car-rent-single_15.png" />
-                          <img alt="" src="images/03-car-rent-single_18.png" />
-                          <img alt="" src="images/03-car-rent-single_18.png" />
-                        </div>
-                    </div>
-                    <p class="fcbprice">฿750<span>/วัน</span></p>
-                </div>
-            </div>
-          <div class="fcbbox">
-              <img alt="" src="images/02-find-car-rent_43.jpg" class="fcbcar" />
-                <img alt="" src="images/02-find-car-rent_51.png" class="fcbown" />
-                <div class="fcbdetail">
-                  <div class="fcbleft">
-                      <h3>เช่ารถ Toyota Alphard</h3>
-                        <div class="fcbrate">
-                          <img alt="" src="images/03-car-rent-single_15.png" />
-                          <img alt="" src="images/03-car-rent-single_15.png" />
-                          <img alt="" src="images/03-car-rent-single_15.png" />
-                          <img alt="" src="images/03-car-rent-single_18.png" />
-                          <img alt="" src="images/03-car-rent-single_18.png" />
-                        </div>
-                    </div>
-                    <p class="fcbprice">฿750<span>/วัน</span></p>
-                </div>
-            </div>
-          <div class="fcbbox">
-              <img alt="" src="images/02-find-car-rent_43.jpg" class="fcbcar" />
-                <img alt="" src="images/02-find-car-rent_51.png" class="fcbown" />
-                <div class="fcbdetail">
-                  <div class="fcbleft">
-                      <h3>เช่ารถ Toyota Alphard</h3>
-                        <div class="fcbrate">
-                          <img alt="" src="images/03-car-rent-single_15.png" />
-                          <img alt="" src="images/03-car-rent-single_15.png" />
-                          <img alt="" src="images/03-car-rent-single_15.png" />
-                          <img alt="" src="images/03-car-rent-single_18.png" />
-                          <img alt="" src="images/03-car-rent-single_18.png" />
-                        </div>
-                    </div>
-                    <p class="fcbprice">฿750<span>/วัน</span></p>
-                </div>
-            </div>
-          <div class="fcbbox">
-              <img alt="" src="images/02-find-car-rent_43.jpg" class="fcbcar" />
-                <img alt="" src="images/02-find-car-rent_51.png" class="fcbown" />
-                <div class="fcbdetail">
-                  <div class="fcbleft">
-                      <h3>เช่ารถ Toyota Alphard</h3>
-                        <div class="fcbrate">
-                          <img alt="" src="images/03-car-rent-single_15.png" />
-                          <img alt="" src="images/03-car-rent-single_15.png" />
-                          <img alt="" src="images/03-car-rent-single_15.png" />
-                          <img alt="" src="images/03-car-rent-single_18.png" />
-                          <img alt="" src="images/03-car-rent-single_18.png" />
-                        </div>
-                    </div>
-                    <p class="fcbprice">฿750<span>/วัน</span></p>
-                </div>
-            </div>
-          <div class="fcbbox">
-              <img alt="" src="images/02-find-car-rent_43.jpg" class="fcbcar" />
-                <img alt="" src="images/02-find-car-rent_51.png" class="fcbown" />
-                <div class="fcbdetail">
-                  <div class="fcbleft">
-                      <h3>เช่ารถ Toyota Alphard</h3>
-                        <div class="fcbrate">
-                          <img alt="" src="images/03-car-rent-single_15.png" />
-                          <img alt="" src="images/03-car-rent-single_15.png" />
-                          <img alt="" src="images/03-car-rent-single_15.png" />
-                          <img alt="" src="images/03-car-rent-single_18.png" />
-                          <img alt="" src="images/03-car-rent-single_18.png" />
-                        </div>
-                    </div>
-                    <p class="fcbprice">฿750<span>/วัน</span></p>
-                </div>
-            </div>
-
         </div>
         <div class="fcbpage">
           <a href="#"><</a>
