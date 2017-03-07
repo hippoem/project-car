@@ -25,7 +25,7 @@
         <p class="mslrenttext">Book Online for the Best Rates with Hippo car rent</p>
         <h3 class="mslrentcate">สถานที่รับรถ</h3>
 
-        <form>
+        <form method="get" action="/search">
           <div class="mslrentpart">
             <input name="" type="text" class="mslrsform" placeholder="Search Location"/>
             <input name="" type="button"  class="mslrsgo"/>
