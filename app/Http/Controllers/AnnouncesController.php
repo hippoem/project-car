@@ -10,4 +10,11 @@ class AnnouncesController extends Controller
     {
       return view ('/announces.index');
     }
+
+    public function create()
+    {
+      return view ('/announces.create');
+    }
+
+
 }
