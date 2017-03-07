@@ -25,3 +25,8 @@ Route::get('/create', 'AnnouncesController@create');
 Route::get('/cars/{announce}', 'AnnouncesController@show');
 
 Route::post('/create', 'AnnouncesController@store');
+
+//Admin
+Route::get('/admin/brands/create', 'BrandsController@create');
+
+Route::post('/admin/brands/create', 'BrandsController@store');
