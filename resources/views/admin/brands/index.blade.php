@@ -25,7 +25,7 @@
 
   <div class="findcart_b">
   <div class="wrap">
-    <form method="post" action="/admin/brands/create">
+    <form method="post" action="/admin/brands">
       {{ csrf_field() }}
         <div class="rentcon">
         	<h1 class="idthead">ยี่ห้อรถยนต์</h1>

@@ -6,10 +6,10 @@ use App\Brands;
 
 class BrandsController extends Controller
 {
-    public function create()
+    public function index()
     {
 
-      return view('/admin.brands.create');
+      return view('/admin.brands.index');
 
     }
 
@@ -20,7 +20,7 @@ class BrandsController extends Controller
           'name' => request('name')
       ]);
 
-      return redirect('/admin/brands/create');
+      return redirect('/admin/brands');
 
     }
 }

@@ -9,7 +9,7 @@
        <div class="fcbdetail">
 
               <div class="fcbleft">
-                     <a href="cars/{{ $announce->id }}"><h3>เช่ารถ {{ $announce->gene }}</h3></a>
+                     <a href="cars/{{ $announce->id }}"><h3>เช่ารถ {{ $announce->genes->brands->name }} {{ $announce->genes->name }}</h3></a>
                      <div class="fcbrate">
                             <img alt="" src="images/03-car-rent-single_15.png" />
                             <img alt="" src="images/03-car-rent-single_15.png" />

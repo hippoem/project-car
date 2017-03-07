@@ -6,11 +6,11 @@
 
     <div class="carrentsingle">
     <div class="wrap">
-        <p class="fcanavi">Home / Car rental / Coupe</p>
+        <p class="fcanavi">Home / Car rental / {{ $announce->genes->categories->name }}</p>
         <div class="rentsgleft">
             <div class="rentsgslide">
             <div class="galleria1">
-                <img alt="" src="/images/03-car-rent-single_07.jpg" />
+                <img alt="" src="{{ $announce->pic }}" />
                 <img alt="" src="/images/03-car-rent-single_07.jpg" />
                 <img alt="" src="/images/03-car-rent-single_07.jpg" />
             </div><!--.galleria1-->
@@ -55,7 +55,7 @@
                             <dt>Doors</dt>
                             <dd>5 doors</dd>
                             <dt>Type</dt>
-                            <dd>Coupe</dd>
+                            <dd>{{ $announce->genes->categories->name }}</dd>
                         </dl>
                     </div>
                     <div class="rentsgqtext tab-content">
@@ -118,7 +118,7 @@
                     <img alt="" src="/images/03-car-rent-single_18.png" />
                 </div>
                 <div class="rentsginfo">
-                    <h3>เช่ารถ {{ $announce->brands->name }} {{ $announce->gene }}</h3>
+                    <h3>เช่ารถ {{ $announce->genes->brands->name }}  {{ $announce->genes->name }} </h3>
                     <p>฿{{ number_format($announce->price) }}<span>/วัน</span></p>
                 </div>
             </div>
@@ -128,7 +128,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.<br /><br />Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis</p>
                 </div>
                 <div class="rentsgpart">
-                    <h3>฿750 x 5 วัน</h3>
+                    <h3>฿{{ number_format($announce->price) }} x 5 วัน</h3>
                     <p>฿ 3,750</p>
                 </div>
                 <div class="rentsgpart">

@@ -11,11 +11,18 @@ class Brands extends Model
         'name'
   ];
 
-  public function announces()
+  public function genes()
   {
 
-    // return $this->hasMany(Announces::class);
-    return $this->hasMany('App\Announces');
+    return $this->hasMany('App\Genes');
 
   }
+
+  // public function announces()
+  // {
+  //
+  //   // return $this->hasMany(Announces::class);
+  //   return $this->hasMany('App\Announces');
+  //
+  // }
 }

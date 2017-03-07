@@ -7,13 +7,27 @@ use Illuminate\Database\Eloquent\Model;
 class Announces extends Model
 {
     protected $fillable = [
-        'brand_id', 'gene', 'price', 'pic', 'profile', 'user_id'
+        'genes_id', 'price', 'pic', 'profile', 'user_id'
     ];
 
-    public function brands()
+    // public function brands()
+    // {
+    //
+    //     return $this->belongsTo('App\Brands', 'brand_id');
+    //
+    // }
+
+    public function genes ()
     {
 
-        return $this->belongsTo('App\Brands', 'brand_id');
+        return $this->belongsTo('App\Genes');
+
+    }
+
+    public function categories ()
+    {
+
+        return $this->belongsTo('App\Categories');
 
     }
 

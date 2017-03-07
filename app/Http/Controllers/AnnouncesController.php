@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Announces;
 use App\User;
+use App\Genes;
 use App\Brands;
+use App\Categories;
 
 class AnnouncesController extends Controller
 {
@@ -30,7 +32,11 @@ class AnnouncesController extends Controller
 
       $brands = Brands::orderBy('name', 'asc')->get();
 
-      return view ('/announces.create', compact('brands'));
+      $genes = Genes::orderBy('name', 'asc')->get();
+
+      $categories = categories::all();
+
+      return view ('/announces.create', compact('genes', 'brands', 'categories'));
     }
 
     public function store()
@@ -38,9 +44,7 @@ class AnnouncesController extends Controller
 
       Announces::create([
 
-          'brand_id' => request('brand_id'),
-
-          'gene' => request('gene'),
+          'genes_id' => request('genes_id'),
 
           'price' => request('price'),
 

@@ -33,10 +33,9 @@
         	   <div class="idtinside">
             	<h2 class="idtcategory">ข้อมูลรถเช่าของคุณ</h2>
 
-
               <div class="form-group">
-                  <label class="regcate" for="brand_id">ยี่ห้อรถยนต์</label>
-                  <select id="brand_id" name="brand_id">
+                  <label class="regcate" for="brands_id">ยี่ห้อรถยนต์</label>
+                  <select id="brands_id" name="brands_id">
 
                     @foreach ($brands as $brand)
 
@@ -45,12 +44,33 @@
                     @endforeach
 
                   </select>
-                  <!-- <input type="text" class="form-control idtform" id="brand" name="brand" /> -->
+              </div>
+
+
+              <div class="form-group">
+                  <label class="regcate" for="genes_id">รุ่นรถยนต์</label>
+                  <select id="genes_id" name="genes_id">
+
+                    @foreach ($genes as $gene)
+
+                      <option value="{{ $gene->id }}"> {{ $gene->name }} </option>
+
+                    @endforeach
+
+                  </select>
               </div>
 
               <div class="form-group">
-                  <label class="regcate" for="gene">รุ่นรถยนต์</label>
-                  <input type="text" class="form-control idtform" id="gene" name="gene" />
+                  <label class="regcate" for="categories_id">ประเภทรถยนต์</label>
+                  <select id="categories_id" name="categories_id">
+
+                    @foreach ($categories as $category)
+
+                      <option value="{{ $category->id }}"> {{ $category->name }} </option>
+
+                    @endforeach
+
+                  </select>
               </div>
 
               <div class="form-group">
