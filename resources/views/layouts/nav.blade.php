@@ -1,21 +1,21 @@
 <div id="header">
-  <a href="/"><img alt="" class="logo" src="images/01-main-th_06.png" /></a>
+  <a href="/"><img alt="" class="logo" src="/images/01-main-th_06.png" /></a>
   <div class="headoption">
     <a href="#" class="hmore">Learn More</a>
     <a href="/create" class="hrent">ปล่อยรถเช่า</a>
     <div class="hsocial">
-      <a href="#"><img alt="" src="images/01-main-th_28.png" /></a>
-      <a href="#"><img alt="" src="images/01-main-th_30.png" /></a>
-      <a href="#"><img alt="" src="images/01-main-th_31.png" /></a>
+      <a href="#"><img alt="" src="/images/01-main-th_28.png" /></a>
+      <a href="#"><img alt="" src="/images/01-main-th_30.png" /></a>
+      <a href="#"><img alt="" src="/images/01-main-th_31.png" /></a>
     </div>
-    <a href="#"><img alt="" class="hlang" src="images/01-main-th_21.png" /></a>
+    <a href="#"><img alt="" class="hlang" src="/images/01-main-th_21.png" /></a>
 
     <div class="hsignin">
       <div class="hsignbox">
         @if (Auth::check())
-          <img alt="" src="images/07-profile-user_12.png" />
+          <img alt="" src="/images/07-profile-user_12.png" />
         @else
-          <img alt="" src="images/01-main-th_24.png" />
+          <img alt="" src="/images/01-main-th_24.png" />
         @endif
 
 
@@ -70,7 +70,7 @@
 
 <div class="phoneheader">
   <div class="menubutton" onclick="$('.phonemenu, .menubutton').toggleClass('touch')"></div>
-  <a href="#"><img alt="" class="hlang" src="images/01-main-th_21.png" /></a>
+  <a href="#"><img alt="" class="hlang" src="/images/01-main-th_21.png" /></a>
 
 </div>
 

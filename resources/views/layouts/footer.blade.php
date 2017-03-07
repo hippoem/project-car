@@ -15,13 +15,13 @@
       <div class="ftoption">
         <div class="ftsubc">
           <h3 class="fthead">ติดตามเรา</h3>
-          <a href="#"><img alt="" src="images/01-main-th_94.png" /></a>
-          <a href="#"><img alt="" src="images/01-main-th_95.png" /></a>
-          <a href="#"><img alt="" src="images/01-main-th_96.png" /></a>
+          <a href="#"><img alt="" src="/images/01-main-th_94.png" /></a>
+          <a href="#"><img alt="" src="/images/01-main-th_95.png" /></a>
+          <a href="#"><img alt="" src="/images/01-main-th_96.png" /></a>
         </div>
         <div class="ftlang">
           <h3 class="fthead">ภาษา</h3>
-          <img alt="" src="images/01-main-th_21.png" />
+          <img alt="" src="/images/01-main-th_21.png" />
         </div>
       </div>
     </div>
