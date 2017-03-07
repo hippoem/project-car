@@ -17,7 +17,7 @@ class CreateGenesTable extends Migration
             $table->increments('id');
             $table->string('name',100);
             $table->integer('brands_id');
-            $table->integer('catgories_id');
+            $table->integer('categories_id');
             $table->timestamps();
         });
     }

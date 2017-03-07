@@ -34,3 +34,7 @@ Route::post('/admin/brands/create', 'BrandsController@store');
 Route::get('/admin/categories', 'CategoriesController@index');
 
 Route::post('/admin/categories', 'CategoriesController@store');
+
+Route::get('/admin/genes', 'GenesController@index');
+
+Route::post('/admin/genes', 'GenesController@store');
