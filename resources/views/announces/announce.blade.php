@@ -1,6 +1,6 @@
 <div class="fcbbox">
        <a href="cars/{{ $announce->id }}">
-              <img alt="" src="{{ $announce->pic }}" class="fcbcar" />
+              <img alt="" src="{{ $announce->cover }}" class="fcbcar" />
        </a>
        <p class="fcbtag">NEW</p>
        <a href="users/{{ $announce->id }}">

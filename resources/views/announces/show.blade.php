@@ -10,7 +10,7 @@
         <div class="rentsgleft">
             <div class="rentsgslide">
             <div class="galleria1">
-                <img alt="" src="{{ $announce->pic }}" />
+                <img alt="" src="{{ $announce->cover }}" />
                 <img alt="" src="/images/03-car-rent-single_07.jpg" />
                 <img alt="" src="/images/03-car-rent-single_07.jpg" />
             </div><!--.galleria1-->

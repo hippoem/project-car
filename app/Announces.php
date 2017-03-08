@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Announces extends Model
 {
     protected $fillable = [
-        'genes_id', 'price', 'pic', 'profile', 'user_id'
+        'genes_id', 'price', 'cover', 'user_id'
     ];
 
     public function genes ()
