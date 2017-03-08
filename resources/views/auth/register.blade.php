@@ -37,8 +37,8 @@
 				</div>
 
 				<div class="form-group">
-						<label class="regcate" for="telephone">เบอร์โทรศัพท์</label>
-						<input type="text" class="form-control regform" id="telephone" name="telephone" />
+						<label class="regcate" for="mobile">เบอร์โทรศัพท์</label>
+						<input type="text" class="form-control regform" id="mobile" name="mobile" />
 				</div>
 
 				<div class="regcheck">

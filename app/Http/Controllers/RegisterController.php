@@ -27,7 +27,7 @@ class RegisterController extends Controller
 
             'password' => 'required|confirmed',
 
-            'telephone' => 'required'
+            'mobile' => 'required'
 
         ]);
 
@@ -35,7 +35,7 @@ class RegisterController extends Controller
         //$password = Hash::make('yourpassword');
         //bcrypt
 
-        $user = User::create(request(['firstname', 'lastname', 'email', 'password','telephone']));
+        $user = User::create(request(['firstname', 'lastname', 'email', 'password','mobile']));
 
 
         // Sign them it.
