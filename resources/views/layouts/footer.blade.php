@@ -4,7 +4,8 @@
       <ul class="ftmenu">
         <li><a href="#">เกี่ยวกับเรา</a></li>
         <li><a href="#">นโยบายการให้บริการ</a></li>
-        <li><a href="#">สัญญาเช่ารถ</a></li>
+        <li><a href="/contract">สัญญาเช่ารถ</a></li>
+        <li><a href="/insurance">ประกันภัยของเรา</a></li>
       </ul>
       <ul class="ftmenu">
         <li><a href="#">ความช่วยเหลือ</a></li>

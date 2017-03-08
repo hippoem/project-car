@@ -9,6 +9,16 @@ Route::get('/learn', function () {
     return view('pages/learn-more');
 });
 
+Route::get('/contract', function () {
+    return view('pages/contract');
+});
+
+Route::get('/insurance', function () {
+    return view('pages/insurance');
+});
+
+
+
 Route::get('/', 'HomeController@index')->name('home');
 
 Route::get('/register', 'RegisterController@index');
