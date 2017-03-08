@@ -47,21 +47,6 @@
 
     </div>
 
-    <!-- <div class="hsignin">
-      <div class="hsignbox">
-
-        <div class="hsigndetail">
-
-      </div>
-    </div>
-    <ul class="hprofilemenu">
-      <li>คำขอเช่ารถ</li>
-      <li>การเช่าของคุณ</li>
-      <li>รถของคุณ</li>
-      <li>ออกจากระบบ</li>
-    </ul>
-    </div> -->
-
   </div>
   <div class="clear"></div>
 </div>
