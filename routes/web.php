@@ -4,6 +4,11 @@
 //     return view('home');
 // });
 
+//Pages
+Route::get('/learn', function () {
+    return view('pages/learn-more');
+});
+
 Route::get('/', 'HomeController@index')->name('home');
 
 Route::get('/register', 'RegisterController@index');

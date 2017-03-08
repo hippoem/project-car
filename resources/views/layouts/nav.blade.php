@@ -1,7 +1,7 @@
 <div id="header">
   <a href="/"><img alt="" class="logo" src="/images/01-main-th_06.png" /></a>
   <div class="headoption">
-    <a href="#" class="hmore">Learn More</a>
+    <a href="/learn" class="hmore">Learn More</a>
     <a href="/create" class="hrent">ปล่อยรถเช่า</a>
     <div class="hsocial">
       <a href="#"><img alt="" src="/images/01-main-th_28.png" /></a>
@@ -77,7 +77,7 @@
 
 <ul class="phonemenu">
   <li><a href="#">หน้าหลัก</a></li>
-  <li><a href="#">Learn More</a></li>
+  <li><a href="/learn">Learn More</a></li>
   <li><a href="#">ปล่อยรถเช่า</a></li>
   <li><a href="/login">เข้าสู่ระบบ</a></li>
   <li><a href="/register">สมัครสมาชิก</a></li>
