@@ -10,13 +10,6 @@ class Announces extends Model
         'genes_id', 'price', 'pic', 'profile', 'user_id'
     ];
 
-    // public function brands()
-    // {
-    //
-    //     return $this->belongsTo('App\Brands', 'brand_id');
-    //
-    // }
-
     public function genes ()
     {
 
