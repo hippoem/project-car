@@ -18,11 +18,4 @@ class Brands extends Model
 
   }
 
-  // public function announces()
-  // {
-  //
-  //   // return $this->hasMany(Announces::class);
-  //   return $this->hasMany('App\Announces');
-  //
-  // }
 }
