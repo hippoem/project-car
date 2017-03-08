@@ -23,7 +23,7 @@
 
           @if (Auth::check())
 
-          <p class="hprofilename">Narong</p>
+          <p class="hprofilename">{{ Auth::user()->firstname }}</p>
 
           @else
 
