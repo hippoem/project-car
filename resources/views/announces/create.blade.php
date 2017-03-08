@@ -7,17 +7,17 @@
     <div class="rentnavi">
         	<div class="rentnvbox active">
         		<h3>1</h3>
-            	<p>เลือกรถเช่า</p>
+            	<p>ข้อมูลรถเช่า</p>
             </div>
             <img alt="" src="images/09-rent-car_09.jpg">
         	<div class="rentnvbox">
         		<h3>2</h3>
-            	<p>ส่งคำร้องกับเจ้าของ</p>
+            	<p>รูปภาพ</p>
             </div>
             <img alt="" src="images/09-rent-car_09.jpg">
         	<div class="rentnvbox">
         		<h3>3</h3>
-            	<p>ส่งหลักฐานแสดงตัวตน</p>
+            	<p>รายละเอียด</p>
             </div>
         </div>
   </div>
