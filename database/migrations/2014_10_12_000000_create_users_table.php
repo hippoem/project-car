@@ -20,6 +20,7 @@ class CreateUsersTable extends Migration
             $table->string('firstname');
             $table->string('lastname');
             $table->string('mobile');
+            $table->string('profile')->default('/images/profiles/profile_02.png');
             $table->enum('sex', ['male', 'female', 'other'])->nullable();
             $table->date('birthday')->nullable();
             $table->text('address')->nullable();
