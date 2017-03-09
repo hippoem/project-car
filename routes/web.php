@@ -43,7 +43,7 @@ Route::get('/cars/{announce}', 'AnnouncesController@show');
 
 Route::post('/create', 'AnnouncesController@store');
 
-Route::get('/users/show/{id}', 'UsersController@show');
+Route::get('/users/show/{user}', 'UsersController@show');
 
 //Admin
 Route::get('/admin/brands', 'BrandsController@index');
