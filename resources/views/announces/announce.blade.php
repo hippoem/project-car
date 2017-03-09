@@ -4,7 +4,7 @@
        </a>
        <p class="fcbtag">NEW</p>
        <a href="users/{{ $announce->id }}">
-              <img alt="" src="{{ $announce->profile }}" class="fcbown" />
+              <img alt="" src="{{ $announce->user->profile }}" class="fcbown" />
        </a>
        <div class="fcbdetail">
 
