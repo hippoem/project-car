@@ -4,6 +4,8 @@
 //     return view('home');
 // });
 
+Route::get('/category', 'CategoriesController@category');
+
 //Pages
 Route::get('/learn', function () {
     return view('pages/learn-more');

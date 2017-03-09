@@ -26,4 +26,21 @@ class CategoriesController extends Controller
 
 
     }
+
+    public function category()
+    {
+
+        Categories::create([
+            ['name' => 'CAR'],
+            ['name' => 'VAN'],
+            ['name' => '4WD'],
+            ['name' => 'SUV'],
+            ['name' => 'BIKE']
+        ]);
+
+
+        return redirect('/');
+
+
+    }
 }
