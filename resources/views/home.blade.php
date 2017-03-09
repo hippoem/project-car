@@ -122,21 +122,21 @@
 
     <div class="main_b">
       <div class="mnbbox">
-        <a href="#"><img alt="" src="images/shutterstock_493048780.jpg" />
+        <a href="/promotion"><img alt="" src="images/shutterstock_493048780.jpg" />
           <div class="mnbbon">
             <h3>โปรแกรมพิเศษ</h3>
             <p>สําหรับวัยรุ่นที่รักการเดินทาง</p>
           </div></a>
         </div>
         <div class="mnbbox">
-          <a href="#"><img alt="" src="images/shutterstock_285442550.jpg" />
+          <a href="/promotion"><img alt="" src="images/shutterstock_285442550.jpg" />
             <div class="mnbbon">
               <h3>โปรแกรมพิเศษ</h3>
               <p>สําหรับวัยรุ่นที่รักการเดินทาง</p>
             </div></a>
           </div>
           <div class="mnbbox">
-            <a href="#"><img alt="" src="images/shutterstock_519482095.jpg" />
+            <a href="/promotion"><img alt="" src="images/shutterstock_519482095.jpg" />
               <div class="mnbbon">
                 <h3>โปรแกรมพิเศษ</h3>
                 <p>สําหรับวัยรุ่นที่รักการเดินทาง</p>

@@ -19,6 +19,14 @@ Route::get('/insurance', function () {
     return view('pages/insurance');
 });
 
+Route::get('/contact', function () {
+    return view('pages/contact');
+});
+
+Route::get('/promotion', function () {
+    return view('pages/promotion');
+});
+
 
 
 Route::get('/', 'HomeController@index')->name('home');
