@@ -3,7 +3,7 @@
               <img alt="" src="{{ $announce->cover }}" class="fcbcar" />
        </a>
        <p class="fcbtag">NEW</p>
-       <a href="users/{{ $announce->id }}">
+       <a href="users/show/{{ $announce->user->id }}">
               <img alt="" src="{{ $announce->user->profile }}" class="fcbown" />
        </a>
        <div class="fcbdetail">
