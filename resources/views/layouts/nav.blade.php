@@ -2,7 +2,7 @@
   <a href="/"><img alt="" class="logo" src="/images/01-main-th_06.png" /></a>
   <div class="headoption">
     <a href="/learn" class="hmore">Learn More</a>
-    <a href="/create" class="hrent">ปล่อยรถเช่า</a>
+    <a href="/become-a-owner" class="hrent">ปล่อยรถเช่า</a>
     <div class="hsocial">
       <a href="#"><img alt="" src="/images/01-main-th_28.png" /></a>
       <a href="#"><img alt="" src="/images/01-main-th_30.png" /></a>
