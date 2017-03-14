@@ -15,10 +15,10 @@ class CreateGenesTable extends Migration
     {
         Schema::create('genes', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name_eng',100);
+            $table->string('gene_name_eng',100);
             $table->integer('brand_id');
             $table->integer('category_id');
-            $table->timestamps();
+            // $table->timestamps();
         });
     }
 

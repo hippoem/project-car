@@ -22,7 +22,7 @@ class CreateAnnouncesTable extends Migration
             $table->string('gene_id')->nullable();
 
             $table->string('number_plate')->nullable();
-            $table->integer('coutry_id')->nullable();
+            $table->integer('country_id')->nullable();
             $table->string('year',4)->nullable();
             $table->string('seats',3)->nullable();
             $table->string('doors',2)->nullable();
