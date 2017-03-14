@@ -20,14 +20,14 @@ class Genes extends Model
   public function categories()
   {
 
-    return $this->belongsTo('App\Categories');
+    return $this->belongsTo('App\Categories', 'id');
 
   }
 
   public function brands()
   {
 
-    return $this->belongsTo('App\Brands');
+    return $this->belongsTo('App\Brands', 'id');
 
   }
 

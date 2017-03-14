@@ -8,7 +8,7 @@ class Brands extends Model
 {
 
   protected $fillable = [
-        'name'
+        'brand_name_eng'
   ];
 
   public function genes()
