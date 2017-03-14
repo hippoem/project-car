@@ -4,13 +4,12 @@
 
 <div id="content">
 
-
 	<div class="profilerental">
     <div class="wrap">
     <div class="pfrtcon">
     	<div class="pfrtboxh">
         	<div class="pfrtprofile">
-            	<img alt="{{ $user->firstname }}" src="{{ $user->profile }}" class="pfrtpfpic"/>
+            	<img alt="{{ $user->firstname }}" src="{{ $user->user_photos->where('position','1')->first()->user_photo }}" class="pfrtpfpic"/>
                 <div class="pfrtdetail">
                 	<p class="pfrtjoin">Join in {{ $user->created_at->format('F Y') }}</p>
                     <h1 class="pfrtname">{{ $user->firstname }} {{ $user->lastname }}</h1>
@@ -49,7 +48,7 @@
         </div>
         <div class="pfrtleft">
         	<h3>รายละเอียดผู้ให้เช่า</h3>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.<br /><br />Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis</p>
+            <p>{{ $user->about }}</p>
         </div>
         <div class="pfrtright">
         	<div class="pfrtrboxh">
