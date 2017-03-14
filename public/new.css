@@ -1,0 +1,15 @@
+.newnavi {
+	padding: 0px 0px 75px;
+	float: none;
+	clear: both;
+}
+
+.newnavi img {
+	padding: 0px;
+	float: left;
+	height: 28px;
+	margin-top: 0px;
+	margin-right: 20px;
+	margin-bottom: 0px;
+	margin-left: 20px;
+}
