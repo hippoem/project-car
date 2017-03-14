@@ -6,13 +6,19 @@
 
     <div class="carrentsingle">
     <div class="wrap">
-        <p class="fcanavi">Home / Car rental / {{ $announce->genes->categories->name }}</p>
+        <p class="fcanavi">Home / Car rental / {{ $announce->genes->gene_name_eng }}</p>
         <div class="rentsgleft">
             <div class="rentsgslide">
             <div class="galleria1">
-                <img alt="" src="{{ $announce->cover }}" />
-                <img alt="" src="/images/03-car-rent-single_07.jpg" />
-                <img alt="" src="/images/03-car-rent-single_07.jpg" />
+                @forelse ($ann_photos as $ann_photo)
+
+                <img alt="" src="{{ $ann_photo->ann_photo }}" />
+
+                @empty
+                <img alt="" src="/images/cars/lamborghini.jpg" />
+
+                @endforelse
+
             </div><!--.galleria1-->
             <script>
             Galleria.loadTheme('/galleria.classic.min.js');
@@ -25,12 +31,12 @@
             </script>
             </div>
             <div class="rentsgby">
-                <a target="_blank" href="{{ url('users/show') }}/{{ $announce->user->id }}"><img alt="" src="{{ $announce->user->profile }}" /></a>
+                <a target="_blank" href="{{ url('users/show') }}/{{ $announce->user_id }}"><img alt="" src="{{ $user_photo }}" /></a>
                 <div class="rentsgbdet">
-                    <a target="_blank" href="{{ url('users/show') }}/{{ $announce->user->id }}">
+                    <a target="_blank" href="{{ url('users/show') }}/{{ $announce->user_id }}">
                         <h3>{{ $announce->user->firstname }} {{ $announce->user->lastname }}</h3>
                     </a>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+                    <p>{{ $announce->user->about }}</p>
                 </div>
             </div>
             <div class="rentsgqualify">
@@ -43,21 +49,21 @@
                     <div class="rentsgqtext tab-content">
                         <dl>
                             <dt>Year</dt>
-                            <dd>2011</dd>
+                            <dd>{{ $announce->year }}</dd>
                             <dt>Seats</dt>
-                            <dd>5 Seats</dd>
+                            <dd>{{ $announce->seats }} Seats</dd>
                             <dt>Fuel Type</dt>
                             <dd>Diesel</dd>
                             <dt>Transmission</dt>
                             <dd>Auto</dd>
                             <dt>Mileage</dt>
-                            <dd>100-150,000 km</dd>
+                            <dd>{{ $announce->mileage }} km</dd>
                             <dt>Consumption</dt>
                             <dd>6 L / 100 km</dd>
                             <dt>Doors</dt>
-                            <dd>5 doors</dd>
+                            <dd>{{ $announce->doors }} doors</dd>
                             <dt>Type</dt>
-                            <dd>{{ $announce->genes->categories->name }}</dd>
+                            <dd>{{ $announce->genes->categories->category_name_eng }}</dd>
                         </dl>
                     </div>
                     <div class="rentsgqtext tab-content">
@@ -79,7 +85,7 @@
                         </dl>
                     </div>
                     <div class="rentsgqtext tab-content">
-                        <p>Try-hard kitsch enamel pin jean shorts, poke helvetica food truck lomo DIY iPhone tilde readymade 90's venmo lo-fi. Ramps try-hard pitchfork hammock, shoreditch typewriter occupy vice af knausgaard. Hammock cronut flannel vice, biodiesel vegan bicycle rights salvia keytar. Vape food truck hammock blue bottle prism, forage etsy bitters. Tumblr yr pabst, semiotics subway tile cardigan messenger bag chambray franzen. Four dollar toast cronut iceland whatever freegan, microdosing single-origin coffee next level tbh lumbersexual ramps chartreuse VHS. Quinoa four loko cardigan tumblr, chillwave heirloom yr ethical letterpress wayfarers flexitarian unicorn truffaut godard.</p>
+                        <p>{{ $announce->condition }}</p>
                         <p><span>** Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.</span></p>
                     </div>
                 </div>
@@ -120,14 +126,14 @@
                     <img alt="" src="/images/03-car-rent-single_18.png" />
                 </div>
                 <div class="rentsginfo">
-                    <h3>เช่ารถ {{ $announce->genes->brands->name }}  {{ $announce->genes->name }} </h3>
+                    <h3>เช่ารถ {{ $announce->genes->brands->brand_name_eng }}  {{ $announce->genes->gene_name_eng }} </h3>
                     <p>฿{{ number_format($announce->price) }}<span>/วัน</span></p>
                 </div>
             </div>
             <div class="rentsgwhite">
                 <div class="rentsgcardet">
                     <h3>รายละเอียดเกี่ยวกับรถ</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.<br /><br />Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis</p>
+                    <p>{{ $announce->description }}</p>
                 </div>
 
                 <h3 class="mslrentcate">ช่วงเวลาที่คุณต้องการใช้รถ</h3>

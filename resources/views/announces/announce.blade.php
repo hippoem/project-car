@@ -1,15 +1,14 @@
 <div class="fcbbox">
        <a target="_blank" href="{{ url('cars') }}/{{ $announce->id }}">
-              <img alt="" src="{{ $announce->cover }}" class="fcbcar" />
+              <img alt="" src="{{ $ann_photos->where('ann_id', $announce->id )->first()->ann_photo }}" class="fcbcar" />
        </a>
        <p class="fcbtag">NEW</p>
-       <a target="_blank" href="{{ url('users/show') }}/{{ $announce->user->id }}">
-              <img alt="" src="{{ $announce->user->profile }}" class="fcbown" />
+       <a target="_blank" href="{{ url('users/show') }}/{{ $announce->user_id }}">
+              <img alt="" src="{{ $announce->user->user_photos->where('user_id', $announce->user_id )->first()->user_photo }}" class="fcbown" />
        </a>
        <div class="fcbdetail">
-
               <div class="fcbleft">
-                     <a target="_blank" href="{{ url('cars') }}/{{ $announce->id }}"><h3>เช่ารถ {{ $announce->genes->brands->name }} {{ $announce->genes->name }}</h3></a>
+                     <a target="_blank" href="{{ url('cars') }}/{{ $announce->id }}"><h3>เช่ารถ {{ $announce->genes->brands->brand_name_eng }} {{ $announce->genes->gene_name_eng }}</h3></a>
                      <div class="fcbrate">
                             <img alt="" src="images/03-car-rent-single_15.png" />
                             <img alt="" src="images/03-car-rent-single_15.png" />

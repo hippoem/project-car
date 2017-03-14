@@ -91,7 +91,7 @@
 
             @endforeach
 
-          <div class="fcbbox">
+          <!-- <div class="fcbbox">
               <img alt="" src="images/02-find-car-rent_43.jpg" class="fcbcar" />
                 <p class="fcbtag">NEW</p>
                 <img alt="" src="images/02-find-car-rent_51.png" class="fcbown" />
@@ -126,7 +126,7 @@
                     <p class="fcbprice">฿750<span>/วัน</span></p>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="fcbpage">
           <a href="#"><</a>
           <a href="#">1</a>
