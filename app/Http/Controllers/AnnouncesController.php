@@ -37,15 +37,17 @@ class AnnouncesController extends Controller
 
         $cartype = \Request::get('cartype');
 
+        $categories = Categories::where('id', '>', 1)->get();
+
         if($cartype != '')
         {
-            
+
             $announces = Announces::join('genes', 'genes.id', '=', 'announces.gene_id')
                 ->join('categories', 'categories.id', '=', 'genes.category_id')
                 ->join('ann_photos', 'ann_photos.ann_id', '=', 'announces.id')
                 ->where('categories.category_name_eng','like','%'.$cartype.'%')
                 ->where('ann_photos.position','=', '1')
-                ->orderBy('category_name_eng')
+                // ->orderBy('category_name_eng')
                 ->paginate(12);
 
         }
@@ -59,7 +61,7 @@ class AnnouncesController extends Controller
 
         }
 
-        return view('announces.index', compact('announces'));
+        return view('announces.index', compact('announces', 'categories'));
 
     }
 

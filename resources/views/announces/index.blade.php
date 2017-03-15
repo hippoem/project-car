@@ -35,10 +35,18 @@
         <div class="fcabox y">
           <p>เลือกประเภทของรถ</p>
             <select name="" class="fcatype">
-              <option>Select type of car</option>
-              <option>Option 1</option>
-              <option>Option 2</option>
-              <option>Option 3</option>
+              <option>ประเภท</option>
+
+             @forelse ($categories as $categorie)
+
+                <option value=" {{ $categorie->id }} "> {{ $categorie->category_name_eng }}  </option>
+
+             @empty
+                <option>ประเภท</option>
+
+             @endforelse
+
+
             </select>
         </div>
         </form>
