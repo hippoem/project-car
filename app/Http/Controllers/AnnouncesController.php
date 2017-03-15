@@ -35,13 +35,31 @@ class AnnouncesController extends Controller
     public function index()
     {
 
-        $announces = Announces::orderBy('price', 'asc')->get();
+        $cartype = \Request::get('cartype');
 
-        $ann_photos = Ann_photos::where('position', '1')->get();
+        if($cartype != '')
+        {
+            
+            $announces = Announces::join('genes', 'genes.id', '=', 'announces.gene_id')
+                ->join('categories', 'categories.id', '=', 'genes.category_id')
+                ->join('ann_photos', 'ann_photos.ann_id', '=', 'announces.id')
+                ->where('categories.category_name_eng','like','%'.$cartype.'%')
+                ->where('ann_photos.position','=', '1')
+                ->orderBy('category_name_eng')
+                ->paginate(12);
 
-        //dd($ann_photos->where('ann_id','1')->first()->ann_photo);
+        }
+        else
+        {
 
-        return view('announces.index', compact('announces', 'ann_photos'));
+            $announces = Announces::join('ann_photos', 'ann_photos.ann_id', '=', 'announces.id')
+            ->where('ann_photos.position','=', '1')
+            ->orderBy('price', 'asc')
+            ->get();
+
+        }
+
+        return view('announces.index', compact('announces'));
 
     }
 
