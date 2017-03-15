@@ -1,6 +1,6 @@
 <div class="fcbbox">
        <a target="_blank" href="{{ url('cars') }}/{{ $announce->id }}">
-              <img alt="" src="{{ $ann_photos->where('ann_id', $announce->id )->first()->ann_photo }}" class="fcbcar" />
+              <img alt="" src="{{ $announce->ann_photo }}" class="fcbcar" />
        </a>
        <p class="fcbtag">NEW</p>
        <a target="_blank" href="{{ url('users/show') }}/{{ $announce->user_id }}">
