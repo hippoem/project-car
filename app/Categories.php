@@ -11,4 +11,11 @@ class Categories extends Model
         'category_name_eng'
     ];
 
+    public function genes()
+    {
+
+      return $this->hasMany('App\Genes', 'category_id');
+
+    }
+
 }

@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Genes extends Model
 {
     protected $fillable = [
-      'name', 'brands_id', 'categories_id'
+      'gene_name_eng', 'brand_id', 'category_id'
   ];
 
   public function announces()
@@ -20,14 +20,14 @@ class Genes extends Model
   public function categories()
   {
 
-    return $this->belongsTo('App\Categories', 'id');
+    return $this->belongsTo('App\Categories', 'category_id');
 
   }
 
   public function brands()
   {
 
-    return $this->belongsTo('App\Brands', 'id');
+    return $this->belongsTo('App\Brands', 'brand_id');
 
   }
 
