@@ -46,7 +46,7 @@ class CreateAnnouncesTable extends Migration
             $table->integer('min_day')->nullable();
             $table->integer('max_day')->nullable();
 
-            $table->decimal('price',6,2)->nullable();
+            $table->decimal('price',10,2)->nullable();
 
             $table->boolean('audio_input')->default('0');
             $table->boolean('roof_box')->default('0');

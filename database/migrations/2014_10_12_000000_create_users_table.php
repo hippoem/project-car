@@ -35,7 +35,7 @@ class CreateUsersTable extends Migration
             $table->string('license_expire_date')->nullable();
             $table->tinyInteger('status')->default('1');
             $table->enum('type', ['renter', 'owner', 'partner'])->default('renter');
-            // $table->rememberToken();
+            $table->rememberToken();
             $table->timestamps();
         });
     }
