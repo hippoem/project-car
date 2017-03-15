@@ -32,14 +32,15 @@
               });
              </script>
         </div>
+
         <div class="fcabox y">
           <p>เลือกประเภทของรถ</p>
-            <select name="" class="fcatype">
+            <select name="category" class="fcatype">
               <option>ประเภท</option>
 
              @forelse ($categories as $categorie)
 
-                <option value=" {{ $categorie->id }} "> {{ $categorie->category_name_eng }}  </option>
+                 <option @if(Request::get('cartype') == $categorie->category_name_eng ) selected  @endif value=" {{ $categorie->category_name_eng }} "> {{ $categorie->category_name_eng }}  </option>
 
              @empty
                 <option>ประเภท</option>
@@ -149,4 +150,26 @@
 
 <div class="clear"></div>
 </div>
+
+<script type="text/javascript">
+
+  $(document).ready(function(){
+
+    $('select[name="category"]').on('change', function(){
+
+        var category = $(this).val();
+
+        window.location.replace("/search?cartype="+ category );
+
+        // $.get('/search?cartype =' + category,{"_token":$("input[name='_token']").val()}, function(data){
+        //     console.log(category);
+        // });
+            //success data
+
+    });
+
+  });
+
+</script>
+
 @endsection
