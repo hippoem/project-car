@@ -9,21 +9,22 @@
       <a href="#"><img alt="" src="/images/01-main-th_31.png" /></a>
     </div>
     <a href="#"><img alt="" class="hlang" src="/images/01-main-th_21.png" /></a>
-
     <div class="hsignin">
       <div class="hsignbox">
-        @if (Auth::check())
-          <img alt="" src="/images/07-profile-user_12.png" />
-        @else
-          <img alt="" src="/images/01-main-th_24.png" />
-        @endif
 
+          @if (Auth::check())
+
+            <a href="{{ url('users/show') }}/{{ Auth::user()->id }}">
+              <img alt="{{ Auth::user()->firstname }}" src="{{ Auth::user()->user_photos->where('position','1')->first()->user_photo }}" />
+            </a>
+
+          @endif
 
         <div class="hsigndetail">
 
           @if (Auth::check())
 
-          <p class="hprofilename">{{ Auth::user()->firstname }}</p>
+          <a href="{{ url('users/show') }}/{{ Auth::user()->id }}"><p class="hprofilename">{{ Auth::user()->firstname }}</p></a>
 
           @else
 
